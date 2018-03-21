@@ -1,0 +1,381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>小码湾</title>
+<meta name="description" content="私人资源集">
+<meta name="author" content="小码湾">
+<meta name="keyword" content="小码湾">
+<link href="favicon.ico" type="image/x-icon" rel="icon">
+<style>
+/*全局样式*/
+body {margin: 0px;padding: 0px;font-family: 'Microsoft Yahei';font-size: 14px;overflow-x:hidden;repeat;}
+ul,li{list-style: none; }
+a{color: #969696;text-decoration: none;outline: none;}
+a:hover{color: #039;text-decoration: underline;}
+img{border: 0;}
+.ad{ width:960px; height:100px; background:#FF0000; padding:0px;}
+
+/*通用样式*/
+.fl{float: left;}
+.fr{text-align: center;}
+.clear{clear:both;}
+.clearfix:after {content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.clearfix {*zoom:1;}
+
+/* top */
+#top{ width:auto;height:300px;}
+#top .kuandu{width:1003px;margin:0px auto;}
+#top .logo{ width:290px; height:82px;position:relative; top:250px;}
+
+
+/* category_文字 */
+.nav_list{padding-bottom: 10px;width:1003px; margin:0 auto;position: relative;top: -50px;border-radius:4px;opacity:0.80;border: 1px solid #dedede; margin-top:12px; background:#FFFFFF;/*-moz-box-shadow: 0 0 8px #666;-webkit-box-shadow: 0 0 8px #666;*/}
+.nav_list .text{border-radius:4px; padding:2px 10px 3px; color:#FFFFFF;}
+.yellow{background:#EDBD14;}/*黄色*/
+.red{background:#FF0000;}/*红色*/
+.Black{background:#000000;}/*黑色*/
+.green{background:#10A821 !important;}/*绿色*/
+.purple{background:#FF00F5;}/*紫色*/
+.blue{background:#005CFF;}/*蓝色*/
+.gray{background:#ccc;}/*灰色*/
+.hr_solid{width: 960px;height: 10px;*line-height:0px;margin: 0px 10px 0 10px;}
+.hr_solid_no{border-bottom:none !important;}
+.category {position: relative;width: 1000px;height: 34px;line-height: 34px;}
+.category:hover{background:#f9f3f9;}
+.category a{color: #595959;font-size: 14px;}
+.category a:hover{color: #03C;text-decoration: underline;}
+.category .more{position: absolute;top: 0px;right: 6px;font-size: 12px;color: #666;}
+.category .more:hover{color: #000;}
+.category .type {float: left;width: 80px; padding-left: 10px;}
+.category ul{white-space: nowrap;height: 28px;overflow: hidden;}
+.category li{float: left;width: 112px;}
+
+/* float浮动 */
+#rfloat{position:fixed;right:20px;left: 50%;margin-left: 520px; bottom:30px; width:83px;}
+#rfloat ul{ border:1px solid #ccc; width:80px; margin:0px; padding:0px; text-align:center;z-index:10; opacity:1;}
+#rfloat ul li{padding:10px 0px;margin:0px; border-bottom:1px solid #ccc;}
+#rfloat ul li a{padding:10px 12px; background:#FFFFFF; color:#000000;}
+#rfloat ul li a:hover{ background:#1BB832; color:#FFFFFF;text-decoration: none;}
+
+/* footer 页面底部 */
+.link {width: 1003px;border: 1px solid #CCCCCC;border-radius: 5px;margin: 0 auto;background: white;-moz-box-shadow: 1px 2px 2px #999;opacity:0.80;}
+.link ul li {float: left;height: 27px;margin-left: 20px;font-size: 12px;}
+.link ul li a:hover {color: #33CCFF;text-shadow: 0 0 4px #95DFF8;text-decoration: none;}
+.linktop {width: 1003px;border-bottom: 1px solid #CCCCCC;height: 35px;background: url(__PUBLIC__/images/link.png) 8px 7px no-repeat;}
+.linktop span {margin-left: 40px;line-height: 35px;font-size: 13px;color: #8C8D8D;}
+.footer p {display: block;height: 13px;text-align: center;font-size: 13px;color: #8C8D8D;line-height: 13px;margin: 10px 0;}
+.footer{ margin-top:-30px;}
+
+/* 其它 */
+#lyb{ height:auto;margin:6px auto 0px;}
+#lyb .txt{ padding:25px 30px 30px 120px;}
+#lyb #ds-reset{ padding:10px 0px 10px 0px;}
+#lyb #ds-thread {background: #ffffff; width:950px; margin:15px auto; padding:0px 30px 0px 30px;-moz-box-shadow:0 0 5px #666;-webkit-box-shadow:0 0 5px #666;}
+#lyb .ds-powered-by a{ color:#FFF !important;display: none;}
+.m-background {
+    position: absolute;
+    zoom: 1;
+    width: 100%;
+    height: 800px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -88888;
+    background: center top no-repeat transparent;
+}
+
+#bg-over {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(20,29,36,0.1)url(__PUBLIC__/images/background.gif
+) repeat;
+    opacity: 1;
+    z-index: -10086;
+}
+.cs{
+  text-align:center;
+    font-family:微软雅黑;
+  color:rgba(0, 150, 136, 0.59);
+}
+.cs h3{
+color:rgba(3, 169, 244, 0.41);
+}
+img#logo {
+    width: 128px;
+    background-size: cover;
+    border-radius: 200px;
+    box-shadow: 0px 0px 40px rgba(63, 81, 181, 0.72);
+    border: 3px solid #00a0ff;
+    opacity: 1;
+    margin: 0 auto;
+    margin-top: 20px;
+  margin-bottom: 20px;
+  transition: all 1.0s;
+}
+#logo:hover {
+    box-shadow: 0 0 10px #fff;
+    -webkit-box-shadow: 0 0 19px #fff;
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg);   /* IE 9 */
+    -moz-transform:rotate(360deg);  /* Firefox */
+    -webkit-transform:rotate(360deg); /* Safari 和 Chrome */
+    -o-transform:rotate(360deg);  /* Opera */
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+</style>
+</head>
+<body>
+  <div id="bg-over"></div>
+<!-- top -->
+
+<div id="top">
+<div class="cs">
+  <img src="__PUBLIC__/images/logo.jpg" id="logo">
+  <h1>小码湾</h1>
+   <p style="color:#fc784d;font-size:20px;font-weight: bold;">
+    只做大自然的搬运工！
+  </p>
+  <br>
+
+</div>
+</div>
+
+<div class="clear"></div>
+
+<!-- 分隔符 右侧浮动导航 -->
+<div id="rfloat">
+  <ul>
+
+    <li><a href="#">返回顶部</a></li>
+  </ul>
+</div>
+
+<!-- 导航明细 -->
+<div class="nav_list">
+  <!--<div class="fl fenlei">视频 · 游戏 · 小说 · 资讯 · 漫画 · 音乐</div>-->
+  <div class="category">
+    <div class="type video"><font class="yellow text">综合</font></div>
+    <ul>
+      <li><a href=https://github.com/ target="_blank">GItHub</a></li>
+      <li><a href=http://www.oschina.net/ target="_blank">开源中国</a></li>
+      <li><a href=http://www.jb51.net/ target="_blank">脚本之家</a></li>
+      <li><a href=https://www.52pojie.cn/ target="_blank">吾爱破解</a></li>
+      <li><a href=https://segmentfault.com/ target="_blank">segmentfault</a></li>
+      <li><a href=https://www.v2ex.com/ target="_blank">V2EX</a></li>
+      <li><a href=https://www.cnblogs.com/ target="_blank">博客园</a></li>
+      </ul>
+    </div>
+  <div class="category">
+    <div class="type game"><font class="yellow text">自学</font></div>
+    <ul>
+      <li><a href=http://www.imooc.com/ target="_blank">慕课网</a></li>
+      <li><a href=https://www.shiyanlou.com/ target="_blank">实验楼</a></li>
+      <li><a href=www.w3cschool.cn/ target="_blank">w3cschool</a></li>
+      <li><a href=https://developer.mozilla.org/zh-CN/ target="_blank">MDN(前端)</a></li>
+      <li><a href=https://chuanke.baidu.com/ target="_blank">百度传课</a></li>
+      <li><a href=http://study.163.com/ target="_blank">网易云课堂</a></li>
+      <li><a href=https://www.nowcoder.com/ target="_blank">牛客网</a></li>
+      </ul>
+    <!--<a href="game.html" class="more">更多 »</a>-->
+    </div>
+  <div class="category">
+    <div class="type game"><font class="yellow text">开源</font></div>
+    <ul>
+      <li><a href=http://www.thinkphp.cn/ target="_blank">ThinkPHP</a></li>
+      <li><a href=https://www.thinkcmf.com/ target="_blank">ThinkCMF</a></li>
+      <li><a href=http://www.bootcss.com/ target="_blank">Bootstrap</a></li>
+      <li><a href=http://www.layui.com/ target="_blank">Layui</a></li>
+      <li><a href=http://www.fastadmin.net/target="_blank">FastAdmin</a></li>
+      <li><a href=http://php.net/manual/zh/ target="_blank">PHP</a></li>
+      </ul>
+    <!--<a href="game.html" class="more">更多 »</a>-->
+    </div>
+    <div class="category">
+    <div class="type game"><font class="yellow text">社区</font></div>
+    <ul>
+      <li><a href=http://www.phpchina.com/ target="_blank">PHPChina</a></li>
+      <li><a href=http://www.henkuai.com/forum.php target="_blank">微信小程序</a></li>
+      <li><a href=http://www.csdn.net/ target="_blank">CSDN</a></li>
+      <li><a href=http://www.codeforge.cn/ target="_blank">Codeforge</a></li>
+      <li><a href=https://linux.cn/ target="_blank">Linux开源社区</a></li>
+      <li><a href=http://www.iteye.com/ target="_blank">ITeye</a></li>
+      <li><a href=https://juejin.im/ target="_blank">掘金</a></li>
+      <li><a href=http://blog.jobbole.com/ target="_blank">伯乐在线</a></li>
+      </ul>
+    <!--<a href="game.html" class="more">更多 »</a>-->
+    </div>
+
+ <div class="category">
+    <div class="type game"><font class="yellow text">其他</font></div>
+    <ul>
+      <li><a href=http://www.bootcdn.cn/ target="_blank">BootCDN</a></li>
+      <li><a href=http://fontawesome.dashgame.com/ target="_blank">Font Awesome</a></li>
+      <li><a href=http://www.html5tricks.com/ target="_blank">Html5资源</a></li>
+
+      <li><a href=https://1024ss.com/ target="_blank">1024搜索</a></li>
+      <li><a href="http://yizaoyiwan.com/" target="_bank">一早一晚</a></li>
+      <li><a href="http://www.henkuai.com/forum.php" target="_bank">很快(微信)</a></li>
+      </ul>
+    <!--<a href="game.html" class="more">更多 »</a>-->
+    </div>
+</div>
+<div class="nav_list">
+
+  <div class="category">
+    <div class="type group"> <font class="blue text">资讯</font></div>
+    <ul>
+      <li><a href=http://www.zcool.com.cn/ target="_blank">Zcool站酷</a></li>
+      <li><a href=http://codebay.cn/ target="_blank">代码湾</a></li>
+      <li><a href=http://www.techug.com/ target="_blank">程序员</a></li>
+      <li><a href=https://bbs.ichunqiu.com/portal.php target="_blank">春秋论坛</a></li>
+      <li><a href=http://www.itbiancheng.com/ target="_blank">吾爱编程</a></li>
+    </ul>
+  </div>
+    <div class="category">
+    <div class="type group"> <font class="blue text">在线工具</font></div>
+    <ul>
+      <li><a href=http://tool.lu/ target="_blank">在线工具</a></li>
+      <li><a href=http://www.atool.org/ target="_blank">在线工具(2)</a></li>
+      <li><a href=http://www.shouce.ren/ target="_blank">手册网</a></li>
+      <li><a href=http://www.bubaiso.com/ target="_blank">不白搜</a></li>
+      <li><a href=https://www.bejson.com/ target="_blank">在线json转换</a></li>
+      <li><a href=https://tinypng.com// target="_blank">图片压缩</a></li>
+
+    </ul>
+  </div>
+    <div class="category">
+    <div class="type group"> <font class="blue text">文档</font></div>
+    <ul>
+      <li><a href="https://php.golaravel.com/" target="_blank">PHP官方手册</a></li>
+      <li><a href="https://phptherightway.golaravel.com/" target="_blank">PHP编程之道</a></li>
+      <li><a href=https://www.kancloud.cn/explore target="_blank">看云</a></li>
+      <li><a href=https://www.kancloud.cn/manual/thinkphp5/118003 target="_blank">TP5开发手册</a></li>
+      <li><a href=https://www.thinkcmf.com/docs/cmf/%E5%AE%89%E8%A3%85%20ThinkCMF.html target="_blank">CMF开发手册</a></li>
+
+    </ul>
+  </div>
+    <div class="category">
+    <div class="type group"> <font class="blue text">模板</font></div>
+    <ul>
+      <li><a href="http://www.dede58.com/" target="_blank" ">织梦模板</a></li>
+         <li><a href="http://www.erdangjiade.com/" target="_blank" ">二当家</a></li>
+          <li><a href="http://www.17sucai.com/" target="_blank" ">17素材</a></li>
+        <li><a href="http://www.cssmoban.com/" target="_blank" ">模板之家</a></li>
+    </ul>
+  </div>
+  <div class="category">
+    <div class="type group"> <font class="yellow text">API</font></div>
+    <ul>
+      <li><a href=https://www.juhe.cn/ target="_blank">聚合数据</a></li>
+      <li><a href=https://www.ptengine.cn target="_blank">热力图/数据分析</a></li>
+    </ul>
+  </div>
+  <div class="category">
+    <div class="type game"><font class="blue text">素材</font></div>
+    <ul>
+      <li><a href=https://www.ctolib.com/ target="_blank">CTOLib</a></li>
+      <li><a href=http://www.jq22.com/ target="_blank">jQuery插件库</a></li>
+      <li><a href=http://sc.chinaz.com/ target="_blank">站长素材</a></li>
+      <li><a href=http://www.lanrenzhijia.com/ target="_blank">懒人之家</a></li>
+      <li><a href=http://www.5iweb.com.cn/ target="_blank">网页特效库</a></li>
+      <li><a href=http://www.htmleaf.com/ target="_blank">Jquery之家</a></li>
+
+      </ul>
+    <!--<a href="game.html" class="more">更多 »</a>-->
+    </div>
+    <div class="category">
+    <div class="type coolSite"><font class="green text">酷站</font></div>
+    <ul>
+      <li><a href=http://www.coolweb.com.cn/ target="_blank">酷站志</a></li>
+      <li><a href=http://www.zcool.com.cn/ target="_blank">站酷</a></li>
+      <li><a href=http://www.91kuzhan.com/ target="_blank">91酷站</a></li>
+      <li><a href=http://pages.sccnn.com/ target="_blank">酷站集</a></li>
+      <li><a href=http://www.1616.net/jd/1/kuzhan.htm target="_blank">1616酷站</a></li>
+      <li><a href=http://www.114la.com/cool/index.htm?1 target="_blank">114啦酷站</a></li>
+      <li><a href=http://www.cssmoban.com/ target="_blank">模板之家</a></li>
+    </ul>
+</div>
+    <div class="category">
+    <div class="type sports"><font class="yellow text">导航</font></div>
+    <ul>
+      <li><a href=http://hao.shejidaren.com/index.html target="_blank">设计导航</a></li
+      ><li><a href=http://chuangzaoshi.com/ target="_blank">创造狮导航</a></li>
+      <li><a href=http://longmiao.wang/ target="_blank">龙喵网</a></li>
+      <li><a href=http://www.mmfinding.com/ target="_blank">就爱偷偷笑</a></li>
+      <li><a href=http://www.h-ui.net/site.shtml target="_blank">IT网址导航</a></li>
+      <li><a href=http://f2er.club/ target="_blank">前端人的俱乐部</a></li>
+      <li><a href=http://www.daqianduan.com/nav target="_blank">大前端</a></li>
+      <li><a href=https://hao.uisdc.com/ target="_blank">设计师导航</a></li>
+    </ul>
+    </div>
+</div>
+
+<div class="nav_list">
+
+
+  <div class="category">
+    <div class="type caipiao"><font class="green text">优秀博客</font></div>
+    <ul>
+    <li><a href=https://baijunyao.com/ target="_blank">白俊遥</a></li>
+    <li><a href=https://www.liaoxuefeng.com/ target="_blank">廖雪峰</a></li>
+    <li><a href=http://txw1958.cnblogs.com/ target="_blank">方倍工作室</a></li>
+    <li><a href=http://loveteemo.com/index.html target="_blank">青春</a></li>
+    <li><a href=https://www.johnxu.net/ target="_blank">徐发君</a></li>
+    <li><a href=http://wp.iyouths.org/ target="_blank">爱游思</a></li>
+    <li><a href=http://blog.yikaiba.com/index.php target="_blank">壹凯</a></li>
+
+     </ul>
+    </div>
+  <div class="category">
+    <div class="type caipiao"><font class="green text">优秀博客</font></div>
+    <ul>
+    <li><a href=http://www.ljlink.cn/ target="_blank">lilink</a></li>
+    <li><a href=http://www.cnblogs.com/yhyjy/ target="_blank">Elite</a></li>
+    <li><a href=www.hishenyi.com target="_blank">沈逸</a></li>
+    <li><a href=http://www.zhangxihai.cn/ target="_blank">神奇的胖子</a></li>
+    <li><a href=http://www.lnbk1.com/ target="_blank">流年</a></li>
+    <li><a href=http://www.mosq.cn/sort/jianzhan target="_blank">森七</a></li>
+    <li><a href=http://www.wendao123.cn/ target="_blank">闻到</a></li>
+     </ul>
+    </div>
+  <div class="category">
+    <div class="type caipiao"><font class="green text">优秀博客</font></div>
+    <ul>
+    <li><a href=https://liuyanzhao.com/ target="_blank">言曌博客</a></li>
+    <li><a href=https://wangdong.io/ target="_blank">王东</a></li>
+    <li><a href=https://www.xiariboke.com/ target="_blank">夏日</a></li>
+    <li><a href=https://cuiqingcai.com/ target="_blank">崔庆才博客</a></li>
+    </ul>
+    </div>
+</div>
+<div class="nav_list">
+ <div class="category">
+    <div class="type caipiao"><font class="green text">优秀资料</font></div>
+    <ul>
+    <li><a href= https://github.com/greatghoul/remote-working#%E5%85%B6%E5%AE%83%E5%88%97%E8%A1%A8 target="_blank">远程工作相关</a></li>
+    <li><a href=http://blog.xiayf.cn/2013/06/01/php-best-practices/ target="_blank">PHP最佳实践</a></li>
+
+    </ul>
+    </div>
+</div>
+</div>
+
+<div class="clear"></div>
+<div class="footer">
+    <div class="link">
+        <div class="linktop">
+        <span>友情链接</span></div>
+        <ul>
+    <li><a href="http://www.huangl.top/" title="三石兄博客" target="_blank">三石兄博客</a></li>
+    </ul>
+    <br class="clear">
+    </div>
+
+</div>
+
+</body>
+</html>
